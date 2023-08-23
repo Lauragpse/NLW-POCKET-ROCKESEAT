@@ -53,5 +53,33 @@ const media = total / (peso1 + peso2)
 console.log(media.toFixed(2))
 console.log(media.toString(2)) //em binario
 console.log(typeof media)
-console.log(typeof Number)
+console.log(typeof Number) //function
+
+//math
+
+const raio = 5.6
+const area = Math.PI * Math.pow(raio, 2)
+console. log(area)
+console. log(typeof Math) //tipo object
+
+//strings
+
+const escola = "cod3r"
+console.log(escola.charAt(2)) //seleciona a letra da posição na string
+console.log(escola.charAt(4))
+console.log(escola.charAt(5))
+console.log(escola.charCodeAt(3)) // numero 3 na tabela de strings
+console.log(escola.substring(1))
+console.log(escola.substring(0,3))
+console.log('escola'.concat(escola).concat('!')) //concatenação
+console.log(escola.replace(3, 'e')) //substituição
+console.log(escola.replace(/\w/g, 'e'))
+
+console.log('ana,Maria,pedro'.split(',')) //arrays
+
+
+
+
+
+
 
