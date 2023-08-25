@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            text-align: center;
+            background-color: purple;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: white;
+            text-transform: uppercase;
+        }
+        button{
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            border-color: rgb(70, 89, 82);
+            color: rgb(85, 15, 95);
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Clique em um botão abaixo para executar uma função JavaScript:</h1>
+
+
+    <script>
+        function somar() {
+            const valor1 = parseFloat(prompt("primeiro valor: "))
+            const valor2 = parseFloat(prompt("segundo valor: "))
+
+            resultadosoma = valor1 + valor2;
+            alert(resultadosoma);
+        }
+
+    </script>
+    <button onclick="somar()">Somar 2 valores</button>
+
+    <script>
+        function parOuImpar() {
+            let numero = prompt("Digite um número:");
+            if (numero % 2 == 0) {
+                alert("O número é par!");
+            } else {
+                alert("O número é ímpar!");
+            }
+        }
+
+    </script>
+    <button onclick="parOuImpar()">Verificar Par ou Ímpar</button>
+
+    <script>
+        function definirMedia() {
+            nota1 = parseFloat(prompt("primeira nota: "))
+            nota2 = parseFloat(prompt("segunda nota: "))
+
+            calculo = (nota1 + nota2) / 2;
+            alert(calculo)
+        }
+
+    </script>
+    <button onclick="definirMedia()">Definir Media de duas notas</button>
+
+    <script>
+        function converterPolegadasCentimetros() {
+            let polegadas = prompt("Digite o valor em polegadas:");
+            let centimetros = polegadas * 2.54;
+            alert(polegadas + " polegadas é igual a " + centimetros + " centímetros.");
+        }
+    </script>
+    <button onclick="converterPolegadasCentimetros()">converter Polegadas para Centimetros</button>
+
+    <script>
+        function verificarTriangulo() {
+            let lado1 = parseFloat(prompt("Digite o comprimento do primeiro lado:"));
+            let lado2 = parseFloat(prompt("Digite o comprimento do segundo lado:"));
+            let lado3 = parseFloat(prompt("Digite o comprimento do terceiro lado:"));
+
+            if (lado1 + lado2 > lado3 && lado1 + lado3 > lado2 && lado2 + lado3 > lado1) {
+                alert("Os valores podem formar um triângulo!");
+            } else {
+                alert("Os valores não podem formar um triângulo.");
+            }
+        }
+    </script>
+    <button onclick="verificarTriangulo()">verificar o Triangulo</button>
+
+    <script>
+        function calcularAreaTriangulo() {
+            let lado1 = parseFloat(prompt("Digite o comprimento do primeiro lado:"));
+            let lado2 = parseFloat(prompt("Digite o comprimento do segundo lado:"));
+            let lado3 = parseFloat(prompt("Digite o comprimento do terceiro lado:"));
+
+            if (lado1 + lado2 > lado3 && lado1 + lado3 > lado2 && lado2 + lado3 > lado1) {
+                let s = (lado1 + lado2 + lado3) / 2;
+                let area = Math.sqrt(s * (s - lado1) * (s - lado2) * (s - lado3));
+                alert("A área do triângulo é " + area.toFixed(2) + ".");
+            } else {
+                alert("Os valores não podem formar um triângulo.");
+            }
+        }
+    </script>
+    <button onclick="calcularAreaTriangulo()">Calcular a area do triangulo</button>
+
+    <script>
+        function verificarMaior() {
+            let valor1 = parseFloat(prompt("Digite o primeiro valor:"));
+            let valor2 = parseFloat(prompt("Digite o segundo valor:"));
+
+            if (valor1 > valor2) {
+                alert("O primeiro valor é maior.");
+            } else if (valor2 > valor1) {
+                alert("O segundo valor é maior.");
+            } else {
+                alert("Os valores são iguais.");
+            }
+        }
+
+    </script>
+    <button onclick="verificarMaior()">verificar o maior numero</button>
+
+    <script>
+        function calcularDesconto() {
+            let preco = parseFloat(prompt("Digite o preço do produto:"));
+            let desconto = parseFloat(prompt("Digite a porcentagem de desconto:"));
+
+            let valorDesconto = preco * (desconto / 100);
+            let precoFinal = preco - valorDesconto;
+
+            alert("O valor do desconto é R$" + valorDesconto.toFixed(2) + ". O preço final do produto é R$" + precoFinal.toFixed(2) + ".");
+        }
+
+    </script>
+    <button onclick="calcularDesconto()">calcular o Desconto</button>
+
+    <script>
+        function verificarPrimo() {
+            let numero = parseInt(prompt("Digite um número:"));
+            let ehPrimo = true;
+
+            if (numero <= 1) {
+                ehPrimo = false;
+            } else {
+                for (let i = 2; i < numero; i++) {
+                    if (numero % i == 0) {
+                        ehPrimo = false;
+                        break;
+                    }
+                }
+            }
+
+            if (ehPrimo) {
+                alert("O número é primo!");
+            } else {
+                alert("O número não é primo.");
+            }
+        }
+
+    </script>
+    <button onclick="verificarPrimo()">verificar se o numero é Primo</button>
+
+    <script>
+        function calcularFatorial() {
+            let numero = parseInt(prompt("Digite um número:"));
+            let fatorial = 1;
+
+            for (let i = 1; i <= numero; i++) {
+                fatorial *= i;
+            }
+
+            alert("O fatorial de " + numero + " é " + fatorial + ".");
+        }
+
+    </script>
+    <button onclick="calcularFatorial()">calcular o fatorial</button>
+
+
+
+</body>
+</html>
