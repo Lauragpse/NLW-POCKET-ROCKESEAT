@@ -18,5 +18,6 @@ function CalcularMedia(notas){
     }
     return soma / notas.length;
 }
+
 let media = CalcularMedia(aluno.notas);
 console.log(`A média do aluno(a) é ${media}`);
