@@ -10,6 +10,7 @@ while (frutas.length > 0) {
         alert(`A fruta ${nomeFruta} foi retirada da lista.`);
     } else {
         alert(`A fruta ${nomeFruta} não está disponível no nosso mercado.`);
+        break
     }
 }
 
