@@ -1,0 +1,18 @@
+[
+  {
+    "value": "correr 20min por dia",
+    "checked": false
+  },
+  {
+    "value": "tomar 3L de água por dia",
+    "checked": false
+  },
+  {
+    "value": "meditar 5min por dia",
+    "checked": false
+  },
+  {
+    "value": "fazer atividades",
+    "checked": false
+  }
+]
